@@ -63,7 +63,7 @@ const [sending,setIsSending] = useState(false);
       <legend className="text-sm md:text-lg lg:text-xl p-2 text-center">Direct Message </legend>
       <label htmlFor="username" className="  capitalize ">
        
-        username <br />
+        Your Name <br />
         <input
         name="username"
           type="text"
