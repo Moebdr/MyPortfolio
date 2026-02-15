@@ -20,7 +20,7 @@ export default function Footer() {
             Dear visitor, Thank you for reaching out. I truly value
             the trust you've placed in me. I am eager to bring our ideas to life
             and am prepared to cooperate fully to ensure our mutual success.
-            Looking forward to hearing from you soon."
+            Looking forward to hearing from you soon.
           </p>
         </div>
 
