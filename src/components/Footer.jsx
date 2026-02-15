@@ -43,6 +43,7 @@ const [sending,setIsSending] = useState(false);
     const loadingToast = toast.loading("Sending ...");
     setIsSending(true);
     e.preventDefault();
+    
     emailjs.sendForm(import.meta.env.VITE_SERVICE_ID,
        import.meta.env.VITE_TEMPLATE_ID, 
        form.current, 
@@ -50,6 +51,7 @@ const [sending,setIsSending] = useState(false);
       .then((result) => {
           setIsSending(false);
           toast.update(loadingToast, { render: "Message Deliverd successfully🎉", type: "success", isLoading: false, autoClose: 3000 })
+          form.current.reset();
       }, (error) => {
           toast.update(loadingToast, { render: "Somting Wong Try again ❌", type: "error", isLoading: false, autoClose: 3000 })
           setIsSending(false);
