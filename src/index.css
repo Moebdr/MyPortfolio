@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+html{
+  scroll-behavior: smooth !important;
+}
+
+*{
+  box-sizing: border-box;
+ font-family: 'Inter', sans-serif;
+}
+body{
+background: #000;
+}
+.container{
+  max-width:1152px;
+  /* border:1px solid #f00; */
+  margin:0px auto;
+}
+
+
